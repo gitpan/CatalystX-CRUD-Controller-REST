@@ -20,6 +20,7 @@ no_index:
     - t
 requires:
   Catalyst::Action::REST: 0
+  Catalyst::Plugin::Static::Simple: 0
   CatalystX::CRUD: 0.54
   JSON::XS: 2.23
   Scalar::Util: 0
@@ -30,4 +31,4 @@ resources:
   homepage: http://dev.catalyst.perl.org/repos/Catalyst/CatalystX-CRUD/CatalystX-CRUD-Controller-REST
   license: http://dev.perl.org/licenses/
   repository: http://dev.catalyst.perl.org/repos/Catalyst/CatalystX-CRUD/CatalystX-CRUD-Controller-REST
-version: 0.001
+version: 0.002
