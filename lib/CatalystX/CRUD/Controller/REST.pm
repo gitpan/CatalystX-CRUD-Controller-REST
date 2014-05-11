@@ -8,7 +8,7 @@ BEGIN {
     extends qw( Catalyst::Controller::REST CatalystX::CRUD );
 }
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 __PACKAGE__->mk_accessors(
     qw(
@@ -576,7 +576,7 @@ sub inflate_object {
     }
     my $req_data = $c->req->data;
     if ( !$req_data ) {
-        $c->status_bad_request( $c, message => 'Missing request data' );
+        $self->status_bad_request( $c, message => 'Missing request data' );
         return;
     }
 
@@ -792,6 +792,10 @@ You can find documentation for this module with the perldoc command.
 You can also look for information at:
 
 =over 4
+
+=item * Mailing List
+
+L<https://groups.google.com/forum/#!forum/catalystxcrud>
 
 =item * RT: CPAN's request tracker
 
